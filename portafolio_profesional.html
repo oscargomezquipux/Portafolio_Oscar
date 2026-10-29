@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional - Oscar Gómez Zapata</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            navy: '#1e293b',
+                            slate: '#334155',
+                            accent: '#2563eb',
+                            oracleRed: '#c74634',
+                            oracleGold: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(37, 99, 235, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased min-h-screen selection:bg-blue-600 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <img src="imagenes/Gif_Quipux_avanza.gif" alt="Logo GIF" class="w-8 h-8 rounded-full object-cover border border-cyan-500/40 shadow-sm" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1e293b/38bdf8?text=OG';">
+                    <span class="font-bold text-slate-100 text-lg tracking-tight">Oscar Gómez Zapata</span>
+                </div>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#portada" class="text-slate-300 hover:text-blue-400 transition-colors">01. Portada</a>
+                    <a href="#cronologia" class="text-slate-300 hover:text-blue-400 transition-colors">02. Cronología</a>
+                    <a href="#certificaciones" class="text-slate-300 hover:text-blue-400 transition-colors">03. Certificaciones</a>
+                    <a href="#repositorio" class="text-slate-300 hover:text-blue-400 transition-colors">04. Repositorio</a>
+                    <a href="#proyecto" class="text-slate-300 hover:text-blue-400 transition-colors">05. Proyecto Activo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- 01. PORTADA EJECUTIVA -->
+        <section id="portada" class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 border border-slate-800 p-8 sm:p-12 shadow-2xl glow-effect">
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+                
+                <!-- GIF Integrado con efecto moderno -->
+                <div class="flex-shrink-0 flex flex-col items-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur opacity-40 group-hover:opacity-80 transition duration-500"></div>
+                        <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-slate-900 p-2 border-2 border-slate-700/80 flex items-center justify-center overflow-hidden shadow-2xl">
+                            <img src="imagenes/Gif_Quipux_avanza.gif" alt="Animación Quipux" class="w-full h-full object-contain rounded-full transform group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://placehold.co/150x150/0f172a/38bdf8?text=Quipux';">
+                        </div>
+                    </div>
+                    <span class="mt-3 text-xs font-mono text-cyan-400 bg-cyan-950/60 border border-cyan-800/50 px-2.5 py-1 rounded-full flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> ARQUITECTURA DE DATOS
+                    </span>
+                </div>
+
+                <div class="flex-grow text-center md:text-left space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-400 text-xs font-medium tracking-wide uppercase">
+                        <i class="fa-solid fa-briefcase"></i> Perfil Profesional Técnico
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        Oscar Gómez Zapata
+                    </h1>
+                    
+                    <p class="text-xl text-blue-400 font-semibold flex items-center justify-center md:justify-start gap-2">
+                        <span>Arquitecto de Datos Junior</span>
+                    </p>
+
+                    <p class="text-slate-400 text-sm max-w-2xl leading-relaxed text-justify">
+                        Trayectoria profesional documentada enfocada en la administración, diseño y optimización de bases de datos Oracle Database (9i, 10g, 11g, 12c, 13c, 18c, 19c y 21c), RDS-AWS, PostgreSQL, Mongo, MySQL, SQL Server, Bash Scripting, Phyton, Apache Tomcat, GlassFish, WildFly, WebLogic, Networking, Linux, AIX, Windows e integración de arquitecturas de datos empresariales.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap gap-4 justify-center md:justify-start text-xl font-medium text-slate-300">
+                        <div class="bg-slate-800/80 border border-slate-700 px-3 py-2 rounded-lg flex items-center gap-2">
+                            <i class="fa-regular fa-calendar-check text-blue-400"></i>
+                            <span>Periodo Documentado: <strong>2012 - Presente</strong></span>
+                        </div>
+                        <div class="bg-slate-800/80 border border-slate-700 px-3 py-2 rounded-lg flex items-center gap-2">
+                            <i class="fa-solid fa-sack-dollar text-emerald-400"></i>
+                            <span>Asignación Salarial Actual: <strong>$9.500.000</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. LÍNEA DE TIEMPO PROFESIONAL -->
+        <section id="cronologia" class="space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <span class="text-blue-500">02.</span> Línea de Tiempo Profesional
+                    </h2>
+                    <p class="text-sm text-slate-400">Evolución cronológica de certificaciones y acreditaciones oficiales (2012 - 2025)</p>
+                </div>
+            </div>
+
+            <div class="relative border-l-2 border-slate-800 ml-4 md:ml-8 pl-6 md:pl-10 space-y-10">
+
+                <!-- 1. EXAMEN SQL 1Z0-051 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-blue-500 group-hover:scale-125 group-hover:bg-blue-600 transition-all duration-300 flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 group-hover:border-blue-500/50 rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-800 text-blue-400">30 de Noviembre, 2012</span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-building-columns mr-1"></i> Pearson VUE / Oracle</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Examen 1Z0-051: Oracle Database 11g: SQL Fundamentals I</h3>
+                        <p class="text-sm text-slate-400 mt-1">Aprobado con un resultado sobresaliente de <strong>96%</strong> (Puntaje de aprobación: 60%).</p>
+                        <div class="mt-4 flex gap-3">
+                            <button onclick="abrirModalPdf('documentos/Oracle 1Z0-051 Oracle Database SQL Fundamentals I.pdf')" class="text-xs bg-slate-800 hover:bg-blue-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                                <i class="fa-regular fa-file-pdf text-blue-400"></i> Ver Score Report 1Z0-051 (PDF)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. EXAMEN DBA I 1Z0-052 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-blue-500 group-hover:scale-125 group-hover:bg-blue-600 transition-all duration-300 flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 group-hover:border-blue-500/50 rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-800 text-blue-400">30 de Enero, 2013</span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-building-columns mr-1"></i> Pearson VUE / Oracle</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Examen 1Z0-052: Oracle Database 11g: Administration I</h3>
+                        <p class="text-sm text-slate-400 mt-1">Aprobado con un resultado de <strong>96%</strong> (Puntaje de aprobación: 66%).</p>
+                        <div class="mt-4 flex gap-3">
+                            <button onclick="abrirModalPdf('documentos/Oracle 1Z0-052 Oracle Database Administration I - OCA.pdf')" class="text-xs bg-slate-800 hover:bg-blue-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                                <i class="fa-regular fa-file-pdf text-blue-400"></i> Ver Score Report 1Z0-052 (PDF)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. CERTIFICADO OCA 11G -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-red-500 group-hover:scale-125 group-hover:bg-red-600 transition-all duration-300 flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 group-hover:border-red-500/50 rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-800 text-red-400">30 de Enero, 2013</span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-award mr-1"></i> Certificación Oficial Oracle</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Oracle Database 11g Administrator Certified Associate (OCA)</h3>
+                        <p class="text-sm text-slate-400 mt-1">Acreditación oficial expedida tras cumplir los requisitos de la ruta de certificación.</p>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                            <button onclick="abrirModalPdf('documentos/eCertificate-OCA.pdf')" class="text-xs bg-slate-800 hover:bg-red-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                                <i class="fa-regular fa-file-pdf text-red-400"></i> Ver eCertificate OCA (PDF)
+                            </button>
+                            <a href="https://www.credly.com/badges/1ff754f1-9826-4dde-82f7-e0972ea7c93a" target="_blank" class="text-xs bg-red-950/80 hover:bg-red-900 text-red-300 px-3 py-1.5 rounded-lg border border-red-800/60 transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Verificar en Credly
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. BOOTCAMP MINTIC -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-emerald-500 group-hover:scale-125 group-hover:bg-emerald-600 transition-all duration-300 flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 group-hover:border-emerald-500/50 rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-800 text-emerald-400">01 de Agosto, 2025</span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-graduation-cap mr-1"></i> MinTIC / IU Training / U. Caldas / U. Antioquia</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Bootcamp de Programación Nivel Básico (159 horas)</h3>
+                        <p class="text-sm text-slate-400 mt-1">Culminación del entrenamiento especializado en desarrollo e innovación tecnológica.</p>
+                        <div class="mt-4 flex gap-3">
+                            <button onclick="abrirModalPdf('documentos/Certificado IU Training - Programación 159 horas.pdf')" class="text-xs bg-slate-800 hover:bg-emerald-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                                <i class="fa-regular fa-file-pdf text-emerald-400"></i> Ver Certificado Autenticado (PDF)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. EXAMEN DBA II 1Z0-083 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-amber-500 group-hover:scale-125 group-hover:bg-amber-600 transition-all duration-300 flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 group-hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-800 text-amber-400">14 de Agosto, 2025</span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-building-columns mr-1"></i> Oracle University</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Examen 1Z0-083: Oracle Database Administration II</h3>
+                        <p class="text-sm text-slate-400 mt-1">Aprobado con un puntaje de <strong>75%</strong> (Puntaje de aprobación: 57%).</p>
+                        <div class="mt-4 flex gap-3">
+                            <button onclick="abrirModalPdf('documentos/Oracle 1Z0-083 Oracle Database Administration II - OCP.pdf')" class="text-xs bg-slate-800 hover:bg-amber-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                                <i class="fa-regular fa-file-pdf text-amber-400"></i> Ver Score Report 1Z0-083 (PDF)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. CERTIFICADO OCP 2019 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-amber-500 group-hover:scale-125 group-hover:bg-amber-600 transition-all duration-300 flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-800 group-hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-800 text-amber-400">14 de Agosto, 2025</span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-award mr-1"></i> Certificación Profesional Oracle</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Oracle Database Administration 2019 Certified Professional (OCP)</h3>
+                        <p class="text-sm text-slate-400 mt-1">Obtención de la credencial oficial OCP para administración de bases de datos Oracle 19c.</p>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                            <button onclick="abrirModalPdf('documentos/eCertificate-OCP.pdf')" class="text-xs bg-slate-800 hover:bg-amber-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                                <i class="fa-regular fa-file-pdf text-amber-400"></i> Ver eCertificate OCP (PDF)
+                            </button>
+                            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=5FAF7D0CAD0E9174645BCFE0DDD6FEDC101A5052AB9A8CCD8EEDDAF0CD1285FA" target="_blank" class="text-xs bg-amber-950/80 hover:bg-amber-900 text-amber-300 px-3 py-1.5 rounded-lg border border-amber-800/60 transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Verificar en Portal Oracle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 03. DETALLE DE CERTIFICACIONES -->
+        <section id="certificaciones" class="space-y-6">
+            <div class="border-b border-slate-800 pb-4">
+                <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <span class="text-blue-500">03.</span> Detalle de Certificaciones
+                </h2>
+                <p class="text-sm text-slate-400">Fichas descriptivas de las credenciales oficiales Oracle y sus insignias verificadas</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- 1. TARJETA OCA (IZQUIERDA) -->
+                <div class="space-y-4">
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition-all duration-300">
+                        <div class="bg-gradient-to-r from-red-950 via-slate-900 to-slate-900 p-6 border-b border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-mono text-red-400 uppercase tracking-widest font-semibold">Nivel Associate</span>
+                                <h3 class="text-xl font-bold text-white mt-1">Oracle Certified Associate (OCA)</h3>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-red-900/30 border border-red-700/50 flex items-center justify-center text-red-500 text-2xl">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-sm text-slate-300 font-medium">Oracle Database 11g Administrator Certified Associate</p>
+                            <div class="grid grid-cols-2 gap-3 text-xs">
+                                <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                                    <span class="text-slate-500 block mb-0.5">Fecha de Emisión:</span>
+                                    <span class="text-slate-200 font-semibold">30/01/2013</span>
+                                </div>
+                                <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                                    <span class="text-slate-500 block mb-0.5">ID Credencial:</span>
+                                    <span class="text-slate-200 font-mono font-semibold">225567738DBOCA11G</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 flex flex-wrap gap-2">
+                                <button onclick="abrirModalPdf('documentos/eCertificate-OCA.pdf')" class="flex-1 bg-red-600 hover:bg-red-500 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-regular fa-file-pdf"></i> eCertificate PDF
+                                </button>
+                                <a href="https://www.credly.com/badges/1ff754f1-9826-4dde-82f7-e0972ea7c93a" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold py-2.5 px-4 rounded-xl border border-slate-700 transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-shield-halved text-red-400"></i> Verificación Credly
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TARJETA INDEPENDIENTE CON LOGO OCA CENTRADO -->
+                    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[320px] shadow-lg hover:border-red-900/50 transition-all duration-300">
+                        <span class="text-xs text-slate-500 mb-3 font-mono">Insignia Oficial OCA 11g</span>
+					<div class="w-full max-w-[360px] h-52 flex items-center justify-center bg-slate-950 rounded-xl p-2 border border-slate-800">
+					  <img src="imagenes/OCA_ODb11gAdmin_credential.bmp" alt="Insignia Oracle Certified Associate" class="max-h-full max-w-full object-contain" onerror="this.onerror=null; this.src='imagenes/OCA_ODb11gAdmin_credential.jpg';">
+					</div>
+                    </div>
+                </div>
+
+                <!-- 2. TARJETA OCP (DERECHA) -->
+                <div class="space-y-4">
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition-all duration-300">
+                        <div class="bg-gradient-to-r from-amber-950 via-slate-900 to-slate-900 p-6 border-b border-slate-800 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-mono text-amber-400 uppercase tracking-widest font-semibold">Nivel Professional</span>
+                                <h3 class="text-xl font-bold text-white mt-1">Oracle Certified Professional (OCP)</h3>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-900/30 border border-amber-700/50 flex items-center justify-center text-amber-500 text-2xl">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-sm text-slate-300 font-medium">Oracle Database Administration 2019 Certified Professional</p>
+                            <div class="grid grid-cols-2 gap-3 text-xs">
+                                <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                                    <span class="text-slate-500 block mb-0.5">Fecha de Emisión:</span>
+                                    <span class="text-slate-200 font-semibold">14/08/2025</span>
+                                </div>
+                                <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                                    <span class="text-slate-500 block mb-0.5">ID Credencial:</span>
+                                    <span class="text-slate-200 font-mono font-semibold">225567738DB19COCP</span>
+                                </div>
+                            </div>
+                            <div class="pt-2 flex flex-wrap gap-2">
+                                <button onclick="abrirModalPdf('documentos/eCertificate-OCP.pdf')" class="flex-1 bg-amber-600 hover:bg-amber-500 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-regular fa-file-pdf"></i> eCertificate PDF
+                                </button>
+                                <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=5FAF7D0CAD0E9174645BCFE0DDD6FEDC101A5052AB9A8CCD8EEDDAF0CD1285FA" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold py-2.5 px-4 rounded-xl border border-slate-700 transition-colors flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-shield-halved text-amber-400"></i> Verificación CertView
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TARJETA INDEPENDIENTE CON LOGO OCP CENTRADO -->
+                    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[320px] shadow-lg hover:border-amber-900/50 transition-all duration-300">
+                        <span class="text-xs text-slate-500 mb-3 font-mono">Insignia Oficial OCP 2019</span>
+					<div class="w-full max-w-[360px] h-52 flex items-center justify-center bg-slate-950 rounded-xl p-2 border border-slate-800">
+						<img src="imagenes/Oracle Database Administration 2019 Certified Professional-DB19COCP_credential.jpg" alt="Insignia Oracle Certified Professional" class="max-h-full max-w-full object-contain">
+					</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 04. REPOSITORIO DOCUMENTAL -->
+        <section id="repositorio" class="space-y-6">
+            <div class="border-b border-slate-800 pb-4">
+                <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <span class="text-blue-500">04.</span> Repositorio Documental
+                </h2>
+                <p class="text-sm text-slate-400">Acceso a todos los certificados y score reports originales guardados en el directorio local</p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+                <div class="divide-y divide-slate-800/80">
+                    
+                    <!-- 1. SQL FUNDAMENTALS 1Z0-051 -->
+                    <div class="p-4 sm:p-5 hover:bg-slate-800/50 transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-regular fa-file-pdf text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white group-hover:text-blue-400 transition-colors">Oracle 1Z0-051: SQL Fundamentals I</h4>
+                                <p class="text-xs text-slate-400">Score Report • Pearson VUE (Nota: 96%)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                            <span class="text-xs font-mono text-slate-500">30/11/2012</span>
+                            <button onclick="abrirModalPdf('documentos/Oracle 1Z0-051 Oracle Database SQL Fundamentals I.pdf')" class="text-xs bg-slate-800 hover:bg-blue-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">
+                                <i class="fa-solid fa-eye mr-1"></i> Previsualizar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2. SCORE REPORT 1Z0-052 -->
+                    <div class="p-4 sm:p-5 hover:bg-slate-800/50 transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-regular fa-file-pdf text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white group-hover:text-red-400 transition-colors">Oracle 1Z0-052: Database Administration I</h4>
+                                <p class="text-xs text-slate-400">Score Report • Pearson VUE (Nota: 96%)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                            <span class="text-xs font-mono text-slate-500">30/01/2013</span>
+                            <button onclick="abrirModalPdf('documentos/Oracle 1Z0-052 Oracle Database Administration I - OCA.pdf')" class="text-xs bg-slate-800 hover:bg-red-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">
+                                <i class="fa-solid fa-eye mr-1"></i> Previsualizar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3. CERTIFICADO OCA 11G -->
+                    <div class="p-4 sm:p-5 hover:bg-slate-800/50 transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-red-950 border border-red-800/60 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-certificate text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white group-hover:text-red-400 transition-colors">eCertificate: Oracle Database 11g OCA</h4>
+                                <p class="text-xs text-slate-400">Certificado Oficial • Oracle Corporation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                            <span class="text-xs font-mono text-slate-500">30/01/2013</span>
+                            <button onclick="abrirModalPdf('documentos/eCertificate-OCA.pdf')" class="text-xs bg-slate-800 hover:bg-red-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">
+                                <i class="fa-solid fa-eye mr-1"></i> Previsualizar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 4. BOOTCAMP PROGRAMACION MINTIC -->
+                    <div class="p-4 sm:p-5 hover:bg-slate-800/50 transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-950 border border-emerald-800/60 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-graduation-cap text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">Certificado Bootcamp Programación (159h)</h4>
+                                <p class="text-xs text-slate-400">MinTIC • IU Training • U. Caldas • U. Antioquia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                            <span class="text-xs font-mono text-slate-500">01/08/2025</span>
+                            <button onclick="abrirModalPdf('documentos/Certificado IU Training - Programación 159 horas.pdf')" class="text-xs bg-slate-800 hover:bg-emerald-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">
+                                <i class="fa-solid fa-eye mr-1"></i> Previsualizar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 5. SCORE REPORT 1Z0-083 -->
+                    <div class="p-4 sm:p-5 hover:bg-slate-800/50 transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-regular fa-file-pdf text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white group-hover:text-amber-400 transition-colors">Oracle 1Z0-083: Database Administration II</h4>
+                                <p class="text-xs text-slate-400">Score Report • Oracle University (Nota: 75%)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                            <span class="text-xs font-mono text-slate-500">14/08/2025</span>
+                            <button onclick="abrirModalPdf('documentos/Oracle 1Z0-083 Oracle Database Administration II - OCP.pdf')" class="text-xs bg-slate-800 hover:bg-amber-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">
+                                <i class="fa-solid fa-eye mr-1"></i> Previsualizar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 6. CERTIFICADO OCP 2019 -->
+                    <div class="p-4 sm:p-5 hover:bg-slate-800/50 transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-950 border border-amber-800/60 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white group-hover:text-amber-400 transition-colors">eCertificate: Oracle Database Administration 2019 OCP</h4>
+                                <p class="text-xs text-slate-400">Certificado Oficial • Oracle Corporation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                            <span class="text-xs font-mono text-slate-500">14/08/2025</span>
+                            <button onclick="abrirModalPdf('documentos/eCertificate-OCP.pdf')" class="text-xs bg-slate-800 hover:bg-amber-600 text-slate-200 hover:text-white px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">
+                                <i class="fa-solid fa-eye mr-1"></i> Previsualizar
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+		
+        <!--  PROYECTO INNTI -->
+        <section id="proyecto" class="relative bg-gradient-to-br from-slate-900 via-blue-950/40 to-slate-900 border border-blue-900/40 rounded-3xl p-8 sm:p-10 shadow-2xl overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10 text-blue-400 text-9xl font-mono pointer-events-none">
+                <i class="fa-solid fa-network-wired"></i>
+            </div>
+            
+            <div class="relative z-10 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/50 border border-blue-700/50 text-blue-300 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Creación de agente Innti revisión par
+                </div>
+
+                <div class="max-w-3xl space-y-3">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+                        Agente para revisión par de estructuras
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Revisa, corrige y valida scripts de base de datos generados por Innti o entregados por el usuario, aplicando los estándares corporativos de Quipux para Oracle, Oracle + Liquibase, PostgreSQL y MongoDB.</strong>.
+                    </p>
+                </div>
+
+                <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <span class="text-xs font-mono text-slate-500 uppercase">Entorno Intranet / Red Interna</span>
+                        <div class="text-cyan-400 font-mono font-bold text-sm sm:text-base flex items-center gap-2">
+                            <i class="fa-solid fa-link text-slate-600"></i>
+                            <span>Innti-DBA-Revision-Par</span>
+                        </div>
+                    </div>
+                    <a href="https://innti.ai/?model=innti-dba-revision-par" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
+                        <span>Acceder al Agente</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+		
+
+        <!-- 05. PROYECTO EN DESARROLLO -->
+        <section id="proyecto" class="relative bg-gradient-to-br from-slate-900 via-blue-950/40 to-slate-900 border border-blue-900/40 rounded-3xl p-8 sm:p-10 shadow-2xl overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10 text-blue-400 text-9xl font-mono pointer-events-none">
+                <i class="fa-solid fa-network-wired"></i>
+            </div>
+            
+            <div class="relative z-10 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/50 border border-blue-700/50 text-blue-300 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Proyecto Activo del Área
+                </div>
+
+                <div class="max-w-3xl space-y-3">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+                        Aplicación Interna de Gestión de Datos
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Actualmente lidero el desarrollo de una aplicación corporativa desplegada en infraestructura de red local. Cuenta con módulo de seguridad integrado mediante autenticación directa con <strong>Directorio Activo (Active Directory / Usuario de Red)</strong>.
+                    </p>
+                </div>
+
+                <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <span class="text-xs font-mono text-slate-500 uppercase">Entorno Intranet / Red Interna</span>
+                        <div class="text-cyan-400 font-mono font-bold text-sm sm:text-base flex items-center gap-2">
+                            <i class="fa-solid fa-link text-slate-600"></i>
+                            <span>http://10.125.50.180:8090/</span>
+                        </div>
+                    </div>
+                    <a href="http://10.125.50.180:8090/" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs py-3 px-6 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
+                        <span>Acceder al Portal</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+		
+        <!--  PROYECTO SUPERDBA -->
+        <section id="proyecto" class="relative bg-gradient-to-br from-slate-900 via-blue-950/40 to-slate-900 border border-blue-900/40 rounded-3xl p-8 sm:p-10 shadow-2xl overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10 text-blue-400 text-9xl font-mono pointer-events-none">
+                <i class="fa-solid fa-network-wired"></i>
+            </div>
+            
+            <div class="relative z-10 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/50 border border-blue-700/50 text-blue-300 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Creación de agente Súper DBA
+                </div>
+
+                <div class="max-w-3xl space-y-3">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+                        Agente Súper DBA
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Se está en proceso de definición y creación de un agente que sea capaz de apoyar las labores de todo el equipo de Arquitectura de datos, el cual tedrá funcionalidades que nos potenciarán para ser mucho más productivos con la ayuda de la IA.</strong>.
+                    </p>
+                </div>
+
+                <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <span class="text-xs font-mono text-slate-500 uppercase">Red Interna</span>
+                        <div class="text-cyan-400 font-mono font-bold text-sm sm:text-base flex items-center gap-2">
+                            <i class="fa-solid fa-link text-slate-600"></i>
+                            <span>Próximamente...</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>		
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500">
+        <p>© Oscar Gómez Zapata — Portafolio Profesional Documentado</p>
+    </footer>
+
+    <!-- MODAL INTEGRADO PARA VISUALIZAR PDF -->
+    <div id="pdfModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-sm hidden items-center justify-center p-4 sm:p-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-5xl h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+            <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-950">
+                <div class="flex items-center gap-2 text-slate-200 text-sm font-semibold">
+                    <i class="fa-regular fa-file-pdf text-red-500 text-lg"></i>
+                    <span id="modalTitle">Visualizador de Documentos</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a id="modalDirectLink" href="#" target="_blank" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-up-right-from-square"></i> Abrir Pestaña Directa
+                    </a>
+                    <button onclick="cerrarModalPdf()" class="text-slate-400 hover:text-white p-1 rounded-lg transition-colors">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex-grow bg-slate-950 relative">
+                <iframe id="pdfFrame" src="" class="w-full h-full border-0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT JS DEL VISOR -->
+    <script>
+        function abrirModalPdf(ruta) {
+            const modal = document.getElementById('pdfModal');
+            const iframe = document.getElementById('pdfFrame');
+            const title = document.getElementById('modalTitle');
+            const directLink = document.getElementById('modalDirectLink');
+
+            const nombreArchivo = ruta.split('/').pop();
+            title.textContent = nombreArchivo;
+            directLink.href = ruta;
+            iframe.src = ruta;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function cerrarModalPdf() {
+            const modal = document.getElementById('pdfModal');
+            const iframe = document.getElementById('pdfFrame');
+            
+            iframe.src = '';
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                cerrarModalPdf();
+            }
+        });
+    </script>
+</body>
+</html>
